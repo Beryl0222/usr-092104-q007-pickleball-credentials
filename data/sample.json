@@ -1,0 +1,9 @@
+{
+  "event_id": "sample-007",
+  "event_type": "EVENT_SANCTIONED",
+  "aggregate_type": "sanctioned_event",
+  "aggregate_id": "aggregate-007",
+  "occurred_at": "2026-09-20T12:00:00+08:00",
+  "version": 1,
+  "summary": "匹克球赛历资历互认领域样例"
+}
