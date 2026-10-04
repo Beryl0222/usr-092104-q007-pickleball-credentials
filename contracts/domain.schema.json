@@ -1,56 +1,149 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "匹克球赛历资历互认领域事件",
-  "type": "object",
-  "required": [
-    "event_id",
-    "event_type",
-    "aggregate_type",
-    "aggregate_id",
-    "occurred_at",
-    "version",
-    "summary"
-  ],
-  "properties": {
-    "event_id": {
-      "type": "string",
-      "minLength": 1
+  "title": "匹克球赛历资历互认领域事件契约",
+  "description": "所有来源（社区站、省运会资格赛、商业邀请赛、地方上报通道）统一通过本契约定义的事件信封接入。状态由事件重放重建：以 occurred_at（原发生时间）为业务时序，以 source_id + source_seq 检测乱序与缺口，以 idempotency_key 防重复计算。",
+  "$defs": {
+    "event_envelope": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "event_type",
+        "aggregate_type",
+        "aggregate_id",
+        "occurred_at",
+        "version",
+        "summary",
+        "source_id",
+        "source_seq",
+        "recorded_at",
+        "payload"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "事件全局唯一标识（建议 ULID/UUID）。同一事件重传必须复用。"
+        },
+        "event_type": {
+          "type": "string",
+          "enum": [
+            "TOURNAMENT_LEVEL_DECLARED",
+            "EVENT_SANCTIONED",
+            "VENUE_VERIFIED",
+            "OFFICIAL_CERTIFIED",
+            "IDENTITY_REGISTERED",
+            "IDENTITY_MATCH_PROPOSED",
+            "IDENTITY_MATCH_DECIDED",
+            "RULESET_DEFINED",
+            "RULESET_FROZEN_FOR_EVENT",
+            "DIVISION_OPENED",
+            "ELIGIBILITY_GRANTED",
+            "ELIGIBILITY_REVOKED",
+            "ENTRY_SUBMITTED",
+            "ENTRY_WITHDRAWN",
+            "PARTNER_REPLACED",
+            "LINEUP_FROZEN",
+            "WITHDRAWAL_DECLARED",
+            "ALTERNATE_PROMOTED",
+            "RESULT_RECEIVED",
+            "RESULT_CORRECTED",
+            "MATCH_DISCIPLINARY_ISSUED",
+            "APPEAL_FILED",
+            "APPEAL_DECIDED",
+            "DQ_ISSUED",
+            "POINT_BATCH_OPENED",
+            "POINT_BATCH_COMPUTED",
+            "POINT_BATCH_ADJUSTED",
+            "POINT_BATCH_FROZEN",
+            "RANKING_RELEASED",
+            "RANKING_CORRECTION_PUBLISHED"
+          ]
+        },
+        "aggregate_type": {
+          "type": "string",
+          "enum": [
+            "tournament_level",
+            "sanctioned_event",
+            "venue",
+            "official_credential",
+            "participant_identity",
+            "identity_match",
+            "ruleset",
+            "division",
+            "entry",
+            "match_result",
+            "disciplinary_case",
+            "appeal",
+            "point_batch",
+            "ranking_release"
+          ]
+        },
+        "aggregate_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "occurred_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "事件在源头的原发生时间（业务时序以此为准，而非接收时间）。"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "全国平台接收/入库时间，仅用于审计，不参与业务排序。"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "同一聚合内事件版本号，从 1 递增；冲突事件由幂等键与来源序号裁决。"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "来源系统标识，如 community-stn-014、provincial-games-js、commercial-tour-a。"
+        },
+        "source_seq": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "来源内单调递增序号；平台据此检测离线期间的缺口与乱序。"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "minLength": 1,
+          "description": "业务幂等键（如同站同场同名单补传）。重复键只保留首次事件，更正必须走纠正事件而不是重发。"
+        },
+        "correlation_id": {
+          "type": "string",
+          "description": "一次上报批次/业务动作的关联标识。"
+        },
+        "causes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "导致本事件的上游事件 id 列表，形成可追溯因果链。"
+        },
+        "payload": {
+          "type": "object",
+          "description": "事件类型专属负载，见各 *Payload 定义。"
+        }
+      },
+      "additionalProperties": false
     },
-    "event_type": {
-      "type": "string",
-      "enum": [
-        "EVENT_SANCTIONED",
-        "ENTRY_VERIFIED",
-        "RESULT_RECEIVED",
-        "APPEAL_DECIDED",
-        "RANKING_REVISED"
-      ]
-    },
-    "aggregate_type": {
-      "type": "string",
-      "enum": [
-        "sanctioned_event",
-        "participant_identity",
-        "official_credential",
-        "ranking_release"
-      ]
-    },
-    "aggregate_id": {
-      "type": "string",
-      "minLength": 1
-    },
-    "occurred_at": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "version": {
-      "type": "integer",
-      "minimum": 1
-    },
-    "summary": {
-      "type": "string",
-      "minLength": 1
+    "local_member_ref": {
+      "type": "object",
+      "description": "来源系统本地会员号与全国身份的引用。未决前 local_member_no 不得并入他人档案。",
+      "required": ["source_id", "local_member_no"],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1 },
+        "local_member_no": { "type": "string", "minLength": 1 },
+        "participant_id": { "type": "string" }
+      },
+      "additionalProperties": false
     }
   },
-  "additionalProperties": true
+  "type": "object",
+  "$ref": "#/$defs/event_envelope"
 }

@@ -1,5 +1,5 @@
 [project]
 name = "domain-event-contract"
-version = "0.1.0"
-description = "领域事件基础校验"
+version = "0.2.0"
+description = "匹克球赛历资历互认：事件契约、离线乱序重放与可追溯积分/榜单领域内核"
 requires-python = ">=3.11"

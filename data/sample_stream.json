@@ -1,0 +1,892 @@
+[
+  {
+    "event_id": "b9957a03-9757-4c41-90d0-8a1e0f7a831c",
+    "event_type": "TOURNAMENT_LEVEL_DECLARED",
+    "aggregate_type": "tournament_level",
+    "aggregate_id": "COMMUNITY",
+    "occurred_at": "2026-10-04T14:40:27.687444+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687475+00:00",
+    "version": 1,
+    "summary": "登记赛事层级：社区赛",
+    "source_id": "national-platform",
+    "source_seq": 0,
+    "payload": {
+      "level": "COMMUNITY",
+      "name": "社区赛"
+    }
+  },
+  {
+    "event_id": "959986bf-c7c1-4d8c-ac33-ba722d8807f6",
+    "event_type": "EVENT_SANCTIONED",
+    "aggregate_type": "sanctioned_event",
+    "aggregate_id": "E-2026-HZ-014",
+    "occurred_at": "2026-10-04T14:40:27.687516+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687527+00:00",
+    "version": 1,
+    "summary": "办赛授权：杭州西湖社区匹克球公开赛第14站（COMMUNITY）",
+    "source_id": "national-platform",
+    "source_seq": 1,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "level": "COMMUNITY",
+      "name": "杭州西湖社区匹克球公开赛第14站",
+      "starts_at": "2026-10-18T09:00:00+08:00",
+      "ends_at": "2026-10-18T18:00:00+08:00",
+      "organizer_id": "org-hz-xihu-07",
+      "venue_code": "V-BJ-03",
+      "required_officials": [
+        {
+          "role": "REFEREE",
+          "min_cert_level": "B",
+          "count": 1
+        },
+        {
+          "role": "LINE_JUDGE",
+          "min_cert_level": "C",
+          "count": 2
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "839346dd-d831-4166-bc85-8651b9a53cba",
+    "event_type": "VENUE_VERIFIED",
+    "aggregate_type": "venue",
+    "aggregate_id": "V-BJ-03",
+    "occurred_at": "2026-10-04T14:40:27.687577+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687585+00:00",
+    "version": 1,
+    "summary": "场地核验：滨江体育馆3号场 -> PASS",
+    "source_id": "national-platform",
+    "source_seq": 2,
+    "payload": {
+      "venue_code": "V-BJ-03",
+      "name": "滨江体育馆3号场",
+      "status": "PASS"
+    }
+  },
+  {
+    "event_id": "2f00eff5-1ab9-4060-8e58-4a6a4299959a",
+    "event_type": "OFFICIAL_CERTIFIED",
+    "aggregate_type": "official_credential",
+    "aggregate_id": "OF-1001",
+    "occurred_at": "2026-10-04T14:40:27.687638+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687646+00:00",
+    "version": 1,
+    "summary": "裁判资质登记：周敏（B 级）",
+    "source_id": "national-platform",
+    "source_seq": 3,
+    "payload": {
+      "official_id": "OF-1001",
+      "name": "周敏",
+      "certificate_no": "REF-B-2207",
+      "cert_level": "B",
+      "valid_from": "2026-01-01T00:00:00+08:00",
+      "valid_to": "2027-01-01T00:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "2936cc35-4243-4e0e-8c03-959357e7f9bf",
+    "event_type": "OFFICIAL_CERTIFIED",
+    "aggregate_type": "official_credential",
+    "aggregate_id": "OF-2001",
+    "occurred_at": "2026-10-04T14:40:27.687678+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687685+00:00",
+    "version": 1,
+    "summary": "裁判资质登记：李强（C 级）",
+    "source_id": "national-platform",
+    "source_seq": 4,
+    "payload": {
+      "official_id": "OF-2001",
+      "name": "李强",
+      "certificate_no": "LJ-C-3310",
+      "cert_level": "C",
+      "valid_from": "2026-01-01T00:00:00+08:00",
+      "valid_to": "2027-01-01T00:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "a351e82e-dd9b-46bc-8bbf-80f776431d32",
+    "event_type": "OFFICIAL_CERTIFIED",
+    "aggregate_type": "official_credential",
+    "aggregate_id": "OF-2002",
+    "occurred_at": "2026-10-04T14:40:27.687717+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687723+00:00",
+    "version": 1,
+    "summary": "裁判资质登记：赵芳（C 级）",
+    "source_id": "national-platform",
+    "source_seq": 5,
+    "payload": {
+      "official_id": "OF-2002",
+      "name": "赵芳",
+      "certificate_no": "LJ-C-3311",
+      "cert_level": "C",
+      "valid_from": "2026-01-01T00:00:00+08:00",
+      "valid_to": "2027-01-01T00:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "e2e713c4-e330-4672-b803-1e46572fa078",
+    "event_type": "IDENTITY_REGISTERED",
+    "aggregate_type": "participant_identity",
+    "aggregate_id": "community-stn-014/M-88",
+    "occurred_at": "2026-10-04T14:40:27.687768+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687774+00:00",
+    "version": 1,
+    "summary": "地方身份登记：community-stn-014/M-88（陈晨）",
+    "source_id": "community-stn-014",
+    "source_seq": 0,
+    "payload": {
+      "source_id": "community-stn-014",
+      "local_member_no": "M-88",
+      "name": "陈晨",
+      "birth_date": "1992-05-01"
+    }
+  },
+  {
+    "event_id": "579446ea-f3f5-4d4c-89e6-1d82ef777948",
+    "event_type": "IDENTITY_REGISTERED",
+    "aggregate_type": "participant_identity",
+    "aggregate_id": "provincial-games-zj/P-7701",
+    "occurred_at": "2026-10-04T14:40:27.687814+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687820+00:00",
+    "version": 1,
+    "summary": "地方身份登记：provincial-games-zj/P-7701（陈晨）",
+    "source_id": "provincial-games-zj",
+    "source_seq": 0,
+    "payload": {
+      "source_id": "provincial-games-zj",
+      "local_member_no": "P-7701",
+      "name": "陈晨",
+      "birth_date": "1992-05-01"
+    }
+  },
+  {
+    "event_id": "34eba90b-6dbf-4e10-96bf-d8b514c0af7e",
+    "event_type": "IDENTITY_MATCH_PROPOSED",
+    "aggregate_type": "identity_match",
+    "aggregate_id": "MATCH-0001",
+    "occurred_at": "2026-10-04T14:40:27.687861+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687867+00:00",
+    "version": 1,
+    "summary": "提出身份待核对：P-community-stn-014-M-88 ≟ P-provincial-games-zj-P-7701（同名同姓且出生日期一致，待人工核对）",
+    "source_id": "national-platform",
+    "source_seq": 6,
+    "payload": {
+      "match_id": "MATCH-0001",
+      "candidate_a": "P-community-stn-014-M-88",
+      "candidate_b": "P-provincial-games-zj-P-7701",
+      "reason": "同名同姓且出生日期一致，待人工核对",
+      "confidence": 0.81
+    }
+  },
+  {
+    "event_id": "b042895d-2748-4045-bdf8-7dcde5ea23a2",
+    "event_type": "IDENTITY_REGISTERED",
+    "aggregate_type": "participant_identity",
+    "aggregate_id": "community-stn-014/M-99",
+    "occurred_at": "2026-10-04T14:40:27.687909+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687915+00:00",
+    "version": 1,
+    "summary": "地方身份登记：community-stn-014/M-99（林涛）",
+    "source_id": "community-stn-014",
+    "source_seq": 1,
+    "payload": {
+      "source_id": "community-stn-014",
+      "local_member_no": "M-99",
+      "name": "林涛",
+      "birth_date": "1988-11-20"
+    }
+  },
+  {
+    "event_id": "985ece1a-8581-46df-a0d0-d3e4e0aeda7e",
+    "event_type": "IDENTITY_REGISTERED",
+    "aggregate_type": "participant_identity",
+    "aggregate_id": "community-stn-014/M-100",
+    "occurred_at": "2026-10-04T14:40:27.687957+00:00",
+    "recorded_at": "2026-10-04T14:40:27.687963+00:00",
+    "version": 1,
+    "summary": "地方身份登记：community-stn-014/M-100（高远）",
+    "source_id": "community-stn-014",
+    "source_seq": 2,
+    "payload": {
+      "source_id": "community-stn-014",
+      "local_member_no": "M-100",
+      "name": "高远",
+      "birth_date": "1995-03-09"
+    }
+  },
+  {
+    "event_id": "84f58998-9339-43df-8d09-3fc31cdf2325",
+    "event_type": "RULESET_DEFINED",
+    "aggregate_type": "ruleset",
+    "aggregate_id": "RS-COMMUNITY:2026.1",
+    "occurred_at": "2026-10-04T14:40:27.688009+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688014+00:00",
+    "version": 1,
+    "summary": "规则版本发布：RS-COMMUNITY@2026.1",
+    "source_id": "national-platform",
+    "source_seq": 7,
+    "payload": {
+      "ruleset_code": "RS-COMMUNITY",
+      "version": "2026.1",
+      "level": "COMMUNITY",
+      "age_band_method": "年龄自然年分组",
+      "doubles_method": "男双/女双/混双固定",
+      "equipment_method": "拍面抽检A方案",
+      "extras": {}
+    }
+  },
+  {
+    "event_id": "8051e5d5-14c6-454f-84de-4922f1f14eac",
+    "event_type": "DIVISION_OPENED",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.688064+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688070+00:00",
+    "version": 1,
+    "summary": "开设组别：E-2026-HZ-014/MD-19+",
+    "source_id": "national-platform",
+    "source_seq": 8,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "discipline": "DOUBLES",
+      "age_band": "19+",
+      "gender": "M",
+      "max_entries": 2
+    }
+  },
+  {
+    "event_id": "cdb1f78b-d28e-4059-814f-2269c00b13fb",
+    "event_type": "ELIGIBILITY_GRANTED",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.688125+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688131+00:00",
+    "version": 2,
+    "summary": "授予组别资格：P-community-stn-014-M-99 -> MD-19+（年龄与会员资格核验通过）",
+    "source_id": "national-platform",
+    "source_seq": 9,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "participant_id": "P-community-stn-014-M-99",
+      "basis": "年龄与会员资格核验通过"
+    }
+  },
+  {
+    "event_id": "5c9475e8-a6d1-4998-af1a-2358ec1845c5",
+    "event_type": "ELIGIBILITY_GRANTED",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.688185+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688191+00:00",
+    "version": 3,
+    "summary": "授予组别资格：P-community-stn-014-M-100 -> MD-19+（年龄与会员资格核验通过）",
+    "source_id": "national-platform",
+    "source_seq": 10,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "participant_id": "P-community-stn-014-M-100",
+      "basis": "年龄与会员资格核验通过"
+    }
+  },
+  {
+    "event_id": "120650ec-6739-48d0-993a-8a3044f40ea1",
+    "event_type": "ENTRY_SUBMITTED",
+    "aggregate_type": "entry",
+    "aggregate_id": "E-2026-HZ-014/EN-01",
+    "occurred_at": "2026-10-04T14:40:27.688249+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688254+00:00",
+    "version": 1,
+    "summary": "报名：EN-01 -> E-2026-HZ-014/MD-19+",
+    "source_id": "national-platform",
+    "source_seq": 11,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-01",
+      "participant_ids": [
+        "P-community-stn-014-M-99",
+        "P-community-stn-014-M-100"
+      ],
+      "is_alternate": false
+    }
+  },
+  {
+    "event_id": "6d3be68e-b5ac-4092-aac3-8ce821c53b02",
+    "event_type": "IDENTITY_REGISTERED",
+    "aggregate_type": "participant_identity",
+    "aggregate_id": "community-stn-014/M-101",
+    "occurred_at": "2026-10-04T14:40:27.688312+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688317+00:00",
+    "version": 1,
+    "summary": "地方身份登记：community-stn-014/M-101（何凯）",
+    "source_id": "community-stn-014",
+    "source_seq": 3,
+    "payload": {
+      "source_id": "community-stn-014",
+      "local_member_no": "M-101",
+      "name": "何凯",
+      "birth_date": "1990-01-17"
+    }
+  },
+  {
+    "event_id": "a9cfe5e4-6fe4-4d66-ab7f-a9ea55f9ce01",
+    "event_type": "IDENTITY_REGISTERED",
+    "aggregate_type": "participant_identity",
+    "aggregate_id": "community-stn-014/M-102",
+    "occurred_at": "2026-10-04T14:40:27.688376+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688381+00:00",
+    "version": 1,
+    "summary": "地方身份登记：community-stn-014/M-102（罗斌）",
+    "source_id": "community-stn-014",
+    "source_seq": 4,
+    "payload": {
+      "source_id": "community-stn-014",
+      "local_member_no": "M-102",
+      "name": "罗斌",
+      "birth_date": "1991-07-08"
+    }
+  },
+  {
+    "event_id": "680e4da4-ee4e-45df-aafb-8a9294920e30",
+    "event_type": "IDENTITY_REGISTERED",
+    "aggregate_type": "participant_identity",
+    "aggregate_id": "community-stn-014/M-103",
+    "occurred_at": "2026-10-04T14:40:27.688440+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688446+00:00",
+    "version": 1,
+    "summary": "地方身份登记：community-stn-014/M-103（宋涛）",
+    "source_id": "community-stn-014",
+    "source_seq": 5,
+    "payload": {
+      "source_id": "community-stn-014",
+      "local_member_no": "M-103",
+      "name": "宋涛",
+      "birth_date": "1993-09-02"
+    }
+  },
+  {
+    "event_id": "5b439f68-0739-4778-a212-b15ad14461a2",
+    "event_type": "ELIGIBILITY_GRANTED",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.688508+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688514+00:00",
+    "version": 4,
+    "summary": "授予组别资格：P-community-stn-014-M-101 -> MD-19+（年龄与会员资格核验通过）",
+    "source_id": "national-platform",
+    "source_seq": 12,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "participant_id": "P-community-stn-014-M-101",
+      "basis": "年龄与会员资格核验通过"
+    }
+  },
+  {
+    "event_id": "c1490cd4-794c-443e-9646-e38017efafeb",
+    "event_type": "ELIGIBILITY_GRANTED",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.688578+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688583+00:00",
+    "version": 5,
+    "summary": "授予组别资格：P-community-stn-014-M-102 -> MD-19+（年龄与会员资格核验通过）",
+    "source_id": "national-platform",
+    "source_seq": 13,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "participant_id": "P-community-stn-014-M-102",
+      "basis": "年龄与会员资格核验通过"
+    }
+  },
+  {
+    "event_id": "53e73067-09fd-4f1e-8b73-51566511e868",
+    "event_type": "ELIGIBILITY_GRANTED",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.688659+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688664+00:00",
+    "version": 6,
+    "summary": "授予组别资格：P-community-stn-014-M-103 -> MD-19+（年龄与会员资格核验通过）",
+    "source_id": "national-platform",
+    "source_seq": 14,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "participant_id": "P-community-stn-014-M-103",
+      "basis": "年龄与会员资格核验通过"
+    }
+  },
+  {
+    "event_id": "9cfebb3d-0976-4bfc-995b-9737a2a652ee",
+    "event_type": "ELIGIBILITY_GRANTED",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.688730+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688735+00:00",
+    "version": 7,
+    "summary": "授予组别资格：P-community-stn-014-M-88 -> MD-19+（年龄与会员资格核验通过）",
+    "source_id": "national-platform",
+    "source_seq": 15,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "participant_id": "P-community-stn-014-M-88",
+      "basis": "年龄与会员资格核验通过"
+    }
+  },
+  {
+    "event_id": "e898cbbd-11d4-4e5d-93ab-f08c865597f4",
+    "event_type": "ENTRY_SUBMITTED",
+    "aggregate_type": "entry",
+    "aggregate_id": "E-2026-HZ-014/EN-02",
+    "occurred_at": "2026-10-04T14:40:27.688809+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688815+00:00",
+    "version": 1,
+    "summary": "报名：EN-02 -> E-2026-HZ-014/MD-19+",
+    "source_id": "national-platform",
+    "source_seq": 16,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-02",
+      "participant_ids": [
+        "P-community-stn-014-M-101",
+        "P-community-stn-014-M-102"
+      ],
+      "is_alternate": false
+    }
+  },
+  {
+    "event_id": "92e75bf4-96d4-417d-b102-f8647ad67fde",
+    "event_type": "ENTRY_SUBMITTED",
+    "aggregate_type": "entry",
+    "aggregate_id": "E-2026-HZ-014/EN-03",
+    "occurred_at": "2026-10-04T14:40:27.688892+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688898+00:00",
+    "version": 1,
+    "summary": "报名：EN-03 -> E-2026-HZ-014/MD-19+",
+    "source_id": "national-platform",
+    "source_seq": 17,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-03",
+      "participant_ids": [
+        "P-community-stn-014-M-103",
+        "P-community-stn-014-M-88"
+      ],
+      "is_alternate": true
+    }
+  },
+  {
+    "event_id": "6d0b658d-b208-4c00-8124-44e170fea42b",
+    "event_type": "RULESET_FROZEN_FOR_EVENT",
+    "aggregate_type": "sanctioned_event",
+    "aggregate_id": "E-2026-HZ-014",
+    "occurred_at": "2026-10-04T14:40:27.688973+00:00",
+    "recorded_at": "2026-10-04T14:40:27.688978+00:00",
+    "version": 2,
+    "summary": "赛事 E-2026-HZ-014 冻结规则 RS-COMMUNITY@2026.1",
+    "source_id": "national-platform",
+    "source_seq": 18,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "ruleset_code": "RS-COMMUNITY",
+      "ruleset_version": "2026.1"
+    }
+  },
+  {
+    "event_id": "b178f4fb-95ee-42de-be31-c40fe4809650",
+    "event_type": "LINEUP_FROZEN",
+    "aggregate_type": "division",
+    "aggregate_id": "E-2026-HZ-014/MD-19+",
+    "occurred_at": "2026-10-04T14:40:27.689062+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689068+00:00",
+    "version": 8,
+    "summary": "阵容冻结：E-2026-HZ-014/MD-19+（2 队）",
+    "source_id": "national-platform",
+    "source_seq": 19,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_codes": [
+        "EN-01",
+        "EN-02"
+      ]
+    }
+  },
+  {
+    "event_id": "ae275af9-2202-470f-9e05-252e74674eca",
+    "event_type": "WITHDRAWAL_DECLARED",
+    "aggregate_type": "sanctioned_event",
+    "aggregate_id": "E-2026-HZ-014/EN-02",
+    "occurred_at": "2026-10-04T14:40:27.689151+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689156+00:00",
+    "version": 2,
+    "summary": "退赛：EN-02（选手赛前受伤），冻阵后空缺席位待递补",
+    "source_id": "national-platform",
+    "source_seq": 20,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "entry_code": "EN-02",
+      "after_lineup_frozen": true,
+      "reason": "选手赛前受伤"
+    }
+  },
+  {
+    "event_id": "220a62c7-a88c-42d8-962f-408fdf52ca4f",
+    "event_type": "ALTERNATE_PROMOTED",
+    "aggregate_type": "entry",
+    "aggregate_id": "E-2026-HZ-014/EN-03",
+    "occurred_at": "2026-10-04T14:40:27.689242+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689247+00:00",
+    "version": 2,
+    "summary": "候补递补：EN-03 补 EN-02（第 1 顺位）",
+    "source_id": "national-platform",
+    "source_seq": 21,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-03",
+      "vacated_entry_code": "EN-02",
+      "sequence": 1
+    }
+  },
+  {
+    "event_id": "426cea7e-cea4-44cd-b86d-b65745ede756",
+    "event_type": "RESULT_RECEIVED",
+    "aggregate_type": "match_result",
+    "aggregate_id": "E-2026-HZ-014/EN-01/F",
+    "occurred_at": "2026-10-04T14:40:27.689335+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689340+00:00",
+    "version": 1,
+    "summary": "成绩上报：EN-01 F 第 2 名",
+    "source_id": "community-stn-014",
+    "source_seq": 6,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-01",
+      "round": "F",
+      "placing": 2
+    },
+    "idempotency_key": "result:E-2026-HZ-014:EN-01:F"
+  },
+  {
+    "event_id": "e050e456-641a-4661-96a0-6f5db58b67e5",
+    "event_type": "RESULT_RECEIVED",
+    "aggregate_type": "match_result",
+    "aggregate_id": "E-2026-HZ-014/EN-03/F",
+    "occurred_at": "2026-10-04T14:40:27.689434+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689440+00:00",
+    "version": 1,
+    "summary": "成绩上报：EN-03 F 第 1 名",
+    "source_id": "community-stn-014",
+    "source_seq": 7,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-03",
+      "round": "F",
+      "placing": 1
+    },
+    "idempotency_key": "result:E-2026-HZ-014:EN-03:F"
+  },
+  {
+    "event_id": "82ea6f55-f6b4-40a7-ba74-1e74a7b911a6",
+    "event_type": "RESULT_CORRECTED",
+    "aggregate_type": "match_result",
+    "aggregate_id": "E-2026-HZ-014/EN-01/F",
+    "occurred_at": "2026-10-04T14:40:27.689536+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689542+00:00",
+    "version": 2,
+    "summary": "成绩更正：EN-01 F -> 第 1 名（记分表录入颠倒，裁判长复核更正）",
+    "source_id": "community-stn-014",
+    "source_seq": 8,
+    "payload": {
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-01",
+      "round": "F",
+      "corrected_placing": 1,
+      "reason": "记分表录入颠倒，裁判长复核更正"
+    },
+    "causes": [
+      "426cea7e-cea4-44cd-b86d-b65745ede756"
+    ]
+  },
+  {
+    "event_id": "1aa20f1a-c1d9-45c6-b6cc-e65824290375",
+    "event_type": "POINT_BATCH_OPENED",
+    "aggregate_type": "point_batch",
+    "aggregate_id": "PB-HZ014-1",
+    "occurred_at": "2026-10-04T14:40:27.689669+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689676+00:00",
+    "version": 1,
+    "summary": "积分批次开启：PB-HZ014-1（赛事 E-2026-HZ-014，规则与阵容已冻结）",
+    "source_id": "national-platform",
+    "source_seq": 22,
+    "payload": {
+      "batch_code": "PB-HZ014-1",
+      "event_code": "E-2026-HZ-014",
+      "ruleset_code": "RS-COMMUNITY",
+      "ruleset_version": "2026.1",
+      "frozen_lineup_ref": "b178f4fb-95ee-42de-be31-c40fe4809650",
+      "supersedes_batch": null
+    }
+  },
+  {
+    "event_id": "6bfff3fc-8e41-4c5d-9150-754cb72a9fc8",
+    "event_type": "POINT_BATCH_COMPUTED",
+    "aggregate_type": "point_batch",
+    "aggregate_id": "PB-HZ014-1",
+    "occurred_at": "2026-10-04T14:40:27.689796+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689802+00:00",
+    "version": 2,
+    "summary": "积分批次计算：PB-HZ014-1（4 行）",
+    "source_id": "national-platform",
+    "source_seq": 23,
+    "payload": {
+      "batch_code": "PB-HZ014-1",
+      "lines": [
+        {
+          "participant_id": "P-community-stn-014-M-99",
+          "points": 100,
+          "result_event_id": "82ea6f55-f6b4-40a7-ba74-1e74a7b911a6"
+        },
+        {
+          "participant_id": "P-community-stn-014-M-100",
+          "points": 100,
+          "result_event_id": "82ea6f55-f6b4-40a7-ba74-1e74a7b911a6"
+        },
+        {
+          "participant_id": "P-community-stn-014-M-103",
+          "points": 60,
+          "result_event_id": "e050e456-641a-4661-96a0-6f5db58b67e5"
+        },
+        {
+          "participant_id": "P-community-stn-014-M-88",
+          "points": 60,
+          "result_event_id": "e050e456-641a-4661-96a0-6f5db58b67e5"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "d167e175-2ff7-42c5-ad5c-7bfc9bd00c78",
+    "event_type": "POINT_BATCH_FROZEN",
+    "aggregate_type": "point_batch",
+    "aggregate_id": "PB-HZ014-1",
+    "occurred_at": "2026-10-04T14:40:27.689915+00:00",
+    "recorded_at": "2026-10-04T14:40:27.689920+00:00",
+    "version": 3,
+    "summary": "积分批次冻结：PB-HZ014-1（此后只能出更正批次与榜单更正版）",
+    "source_id": "national-platform",
+    "source_seq": 24,
+    "payload": {
+      "batch_code": "PB-HZ014-1"
+    }
+  },
+  {
+    "event_id": "cd81964b-6107-4d69-af6a-f2376aec8ccd",
+    "event_type": "RANKING_RELEASED",
+    "aggregate_type": "ranking_release",
+    "aggregate_id": "RK-2026-W42",
+    "occurred_at": "2026-10-04T14:40:27.690033+00:00",
+    "recorded_at": "2026-10-04T14:40:27.690039+00:00",
+    "version": 1,
+    "summary": "榜单发布：RK-2026-W42（截至 2026-10-20T00:00:00+08:00）",
+    "source_id": "national-platform",
+    "source_seq": 25,
+    "payload": {
+      "release_code": "RK-2026-W42",
+      "as_of": "2026-10-20T00:00:00+08:00",
+      "entries": [
+        {
+          "participant_id": "P-community-stn-014-M-99",
+          "points": 100
+        },
+        {
+          "participant_id": "P-community-stn-014-M-100",
+          "points": 100
+        },
+        {
+          "participant_id": "P-community-stn-014-M-103",
+          "points": 60
+        },
+        {
+          "participant_id": "P-community-stn-014-M-88",
+          "points": 60
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "163a8694-8b49-4a51-ae8b-4be530211d4a",
+    "event_type": "DQ_ISSUED",
+    "aggregate_type": "disciplinary_case",
+    "aggregate_id": "CASE-009",
+    "occurred_at": "2026-10-04T14:40:27.690154+00:00",
+    "recorded_at": "2026-10-04T14:40:27.690172+00:00",
+    "version": 1,
+    "summary": "取消资格：EN-03（器材抽检拍面厚度超标，赛后复核成立）；积分批次已冻结（或为冻前迟到裁决）：禁止改写，须开更正批次冲销补发，已发布榜单须出连续更正版",
+    "source_id": "national-platform",
+    "source_seq": 26,
+    "payload": {
+      "case_id": "CASE-009",
+      "event_code": "E-2026-HZ-014",
+      "division_code": "MD-19+",
+      "entry_code": "EN-03",
+      "match_round": "F",
+      "effective_stage": "AFTER_BATCH_FROZEN",
+      "reason": "器材抽检拍面厚度超标，赛后复核成立"
+    }
+  },
+  {
+    "event_id": "25f7ad44-367f-4b59-bf83-b32b8b6546a4",
+    "event_type": "POINT_BATCH_OPENED",
+    "aggregate_type": "point_batch",
+    "aggregate_id": "PB-HZ014-2",
+    "occurred_at": "2026-10-04T14:40:27.690314+00:00",
+    "recorded_at": "2026-10-04T14:40:27.690319+00:00",
+    "version": 1,
+    "summary": "积分批次开启：PB-HZ014-2（赛事 E-2026-HZ-014，规则与阵容已冻结）",
+    "source_id": "national-platform",
+    "source_seq": 27,
+    "payload": {
+      "batch_code": "PB-HZ014-2",
+      "event_code": "E-2026-HZ-014",
+      "ruleset_code": "RS-COMMUNITY",
+      "ruleset_version": "2026.1",
+      "frozen_lineup_ref": "b178f4fb-95ee-42de-be31-c40fe4809650",
+      "supersedes_batch": "PB-HZ014-1"
+    }
+  },
+  {
+    "event_id": "611afb87-0666-4cf0-b1b0-dc4dc4a1bdde",
+    "event_type": "POINT_BATCH_COMPUTED",
+    "aggregate_type": "point_batch",
+    "aggregate_id": "PB-HZ014-2",
+    "occurred_at": "2026-10-04T14:40:27.690458+00:00",
+    "recorded_at": "2026-10-04T14:40:27.690464+00:00",
+    "version": 2,
+    "summary": "积分批次计算：PB-HZ014-2（4 行）",
+    "source_id": "national-platform",
+    "source_seq": 28,
+    "payload": {
+      "batch_code": "PB-HZ014-2",
+      "lines": [
+        {
+          "participant_id": "P-community-stn-014-M-99",
+          "points": 100,
+          "result_event_id": "82ea6f55-f6b4-40a7-ba74-1e74a7b911a6"
+        },
+        {
+          "participant_id": "P-community-stn-014-M-100",
+          "points": 100,
+          "result_event_id": "82ea6f55-f6b4-40a7-ba74-1e74a7b911a6"
+        },
+        {
+          "participant_id": "P-community-stn-014-M-103",
+          "points": 0,
+          "result_event_id": "e050e456-641a-4661-96a0-6f5db58b67e5",
+          "reason": "CASE-009 DQ，冲销原 60 分"
+        },
+        {
+          "participant_id": "P-community-stn-014-M-88",
+          "points": 0,
+          "result_event_id": "e050e456-641a-4661-96a0-6f5db58b67e5",
+          "reason": "CASE-009 DQ，冲销原 60 分"
+        }
+      ]
+    }
+  },
+  {
+    "event_id": "b8d824f6-48db-4ba3-aa86-fcbadfc31cd5",
+    "event_type": "POINT_BATCH_FROZEN",
+    "aggregate_type": "point_batch",
+    "aggregate_id": "PB-HZ014-2",
+    "occurred_at": "2026-10-04T14:40:27.690604+00:00",
+    "recorded_at": "2026-10-04T14:40:27.690610+00:00",
+    "version": 3,
+    "summary": "积分批次冻结：PB-HZ014-2（此后只能出更正批次与榜单更正版）",
+    "source_id": "national-platform",
+    "source_seq": 29,
+    "payload": {
+      "batch_code": "PB-HZ014-2"
+    }
+  },
+  {
+    "event_id": "b9c6e4a1-fd94-442d-8491-3a46cf6e6ad5",
+    "event_type": "RANKING_CORRECTION_PUBLISHED",
+    "aggregate_type": "ranking_release",
+    "aggregate_id": "RK-2026-W42-C1",
+    "occurred_at": "2026-10-04T14:40:27.690744+00:00",
+    "recorded_at": "2026-10-04T14:40:27.690750+00:00",
+    "version": 1,
+    "summary": "榜单更正版 v1：RK-2026-W42-C1（CASE-009 器材违规 DQ 成立，冲销 EN-03 积分）",
+    "source_id": "national-platform",
+    "source_seq": 30,
+    "payload": {
+      "release_code": "RK-2026-W42-C1",
+      "correction_seq": 1,
+      "supersedes_release": "RK-2026-W42",
+      "entries": [
+        {
+          "participant_id": "P-community-stn-014-M-99",
+          "points": 100
+        },
+        {
+          "participant_id": "P-community-stn-014-M-100",
+          "points": 100
+        }
+      ],
+      "reason": "CASE-009 器材违规 DQ 成立，冲销 EN-03 积分",
+      "as_of": "2026-10-22T00:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "evt-late-003",
+    "event_type": "VENUE_VERIFIED",
+    "aggregate_type": "venue",
+    "aggregate_id": "V-LATE-01",
+    "occurred_at": "2026-10-18T17:00:00+08:00",
+    "recorded_at": "2026-10-19T08:00:00+08:00",
+    "version": 1,
+    "summary": "离线补传",
+    "source_id": "stn-offline-071",
+    "source_seq": 2,
+    "payload": {
+      "venue_code": "V-LATE-01",
+      "name": "临平备用场",
+      "status": "PASS"
+    }
+  },
+  {
+    "event_id": "evt-late-001",
+    "event_type": "EVENT_SANCTIONED",
+    "aggregate_type": "sanctioned_event",
+    "aggregate_id": "E-LATE-01",
+    "occurred_at": "2026-10-17T09:00:00+08:00",
+    "recorded_at": "2026-10-19T08:00:00+08:00",
+    "version": 1,
+    "summary": "离线补传",
+    "source_id": "stn-offline-071",
+    "source_seq": 0,
+    "payload": {
+      "event_code": "E-LATE-01",
+      "level": "COMMUNITY",
+      "name": "离线社区站",
+      "starts_at": "2026-10-25T09:00:00+08:00",
+      "ends_at": "2026-10-25T17:00:00+08:00",
+      "organizer_id": "org-late-01"
+    }
+  }
+]

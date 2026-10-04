@@ -1,9 +1,26 @@
 {
-  "event_id": "sample-007",
+  "event_id": "evt-2026-0920-sanction-001",
   "event_type": "EVENT_SANCTIONED",
   "aggregate_type": "sanctioned_event",
-  "aggregate_id": "aggregate-007",
+  "aggregate_id": "evt-2026-hz-community-014",
   "occurred_at": "2026-09-20T12:00:00+08:00",
+  "recorded_at": "2026-09-20T12:05:00+08:00",
   "version": 1,
-  "summary": "匹克球赛历资历互认领域样例"
+  "summary": "杭州社区站第14站获办赛授权（社区赛层级）",
+  "source_id": "community-stn-014",
+  "source_seq": 0,
+  "idempotency_key": "sanction:community-stn-014:2026-09-20",
+  "payload": {
+    "event_code": "evt-2026-hz-community-014",
+    "level": "COMMUNITY",
+    "name": "杭州西湖社区匹克球公开赛第14站",
+    "starts_at": "2026-10-18T09:00:00+08:00",
+    "ends_at": "2026-10-18T18:00:00+08:00",
+    "organizer_id": "org-hz-xihu-07",
+    "venue_code": "venue-hz-binjiang-03",
+    "required_officials": [
+      {"role": "REFEREE", "min_cert_level": "B", "count": 1},
+      {"role": "LINE_JUDGE", "min_cert_level": "C", "count": 2}
+    ]
+  }
 }
